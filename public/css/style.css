@@ -1,0 +1,162 @@
+/* importing the font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color :black;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    padding: 25px;
+    margin: 0 10px;
+}
+
+.menu li:hover{
+    cursor: pointer;
+    border-bottom: 3px solid aquamarine;
+}
+
+footer{
+    background-color: black;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+@media screen and (max-width:560px){
+    nav{
+        padding-top: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+    
+    .menu li{
+        padding: 15px;
+    }
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container h1{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.container p{
+    text-align: center;
+    max-width: 50vw;
+}
+
+@media screen and (max-width:1150px){
+
+    .container p{
+        max-width: 80vw;
+    }
+
+}
+
+@media screen and (max-width:700px){
+
+    .container p{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+.compose-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.compose-form input{
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.compose-form textarea{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 7px;
+}
+
+.compose-form button{
+    margin-top: 10px;
+    width: 70px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(48, 109, 179);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.posts{
+    margin: 10px 50px;
+}
+
+.posts h2{
+    font-weight: 400;
+}
+
+.post{
+    margin-bottom: 10px;
+}
+
+.link{
+    color: cadetblue;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.cont{
+    display: flex;
+}
+
+.data{
+    padding: 30px;
+}
